@@ -104,9 +104,7 @@
 				TargetAttributes = {
 					685954631E62FA9C00A73D10 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7GW64MW9FF;
 						LastSwiftMigration = 1020;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -295,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 7GW64MW9FF;
 				INFOPLIST_FILE = ROC/Info.plist;
@@ -306,6 +305,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = matsuikeiji.ROC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ROC (Development)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -314,6 +314,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = 7GW64MW9FF;
 				INFOPLIST_FILE = ROC/Info.plist;
@@ -325,6 +327,7 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = matsuikeiji.ROC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ROC (Distribution)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
